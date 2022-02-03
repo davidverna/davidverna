@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @davidverna
+- 👋 Hi, I’m @davidverna . This is my repository to see my code's webs. Thanks!!
 - 👀 I’m interested in front end developer.
 - 🌱 I’m currently learning Javascript.
 - 💞️ I’m looking to collaborate on HTML 5 and CSS3 projects.
