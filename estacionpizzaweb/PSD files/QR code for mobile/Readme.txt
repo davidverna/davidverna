@@ -1,1 +1,0 @@
-This image will be displayed by the bartender if the QR code cannot be read on the physical paper on the bar table.
