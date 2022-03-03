@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Entre Sevillanas</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+@font-face { font-family: GLSNECB; src: url(fonts/GLSNECB.TTF);}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.myslides {
+    display: none;
+}
+
+h1 {
+    font-family: GLSNECB;
+    font-size: 110px;
+}
+
+h2 {
+    font-family: GLSNECB;
+    font-size: 60px;
+}
+
+h3 {
+    font-family: GLSNECB;
+    font-size: 30px;
+    text-align: center;
+    margin: 50px 0 20px;
+}
+
+h4 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.audioinfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 80px;
+}
+
+.youtubesection {
+  margin-bottom: 20px;
+}
+
+.buhocaribu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.membersimages {
+    display: flex;
+    margin: 80px 0 50px;
+}
+
+.w3-medium {
+  margin-top: 50px;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+      href="javascript:void(0)"
+      onclick="toggleMenu()"
+      title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">NOSOTROS</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SHOWS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACTO</a>
+  </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navMobile" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">NOSOTROS</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">SHOWS</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">CONTACTO</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="myslides w3-display-container w3-center">
+    <img src="images/image1.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h1>ENTRE SEVILLANAS</h1>
+      <p><b>BORDER SWING</b></p>   
+    </div>
+  </div>
+  <div class="myslides w3-display-container w3-center">
+    <img src="images/image2.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h1>ENTRE SEVILLANAS</h1>
+      <p><b>BORDER SWING</b></p>    
+    </div>
+  </div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">ENTRE SEVILLANAS</h2>
+    <!-- <p style="margin-bottom: 50px;"><b>BORDER SWING</b></p>    -->
+    <p class="w3-opacity"><i>NOSOTROS<i></p>
+    <p>Entre Sevillanas es un quintento de border swing formado por tres guitarras españolas, contrabajo, batería y 4 voces. El conjunto transporta al espectador a principios del siglo XX con su característico sonido y puesta en escena.</p>
+    <div class="membersimages">
+      <div class="w3-third">
+        <p>Juan Pablo Marín</p>
+        <img src="images/juanpablomarinimage.jpg" class="w3-round" alt="Juan Pablo Marín" title="Juan Pablo Marín" style="width:70%">
+      </div>
+      <div class="w3-third">
+        <p>Emmanuel Lüscher</p>
+        <img src="images/emmanuelluscherimage.jpg" class="w3-round w3-margin-bottom" alt="Emmanuel Lüscher" title="Emmanuel Lüscher" style="width:70%">
+      </div>
+      <div class="w3-third">
+        <p>Ariel Vercesi</p>
+        <img src="images/arielvercesiimage.jpg" class="w3-round w3-margin-bottom" alt="Ariel Vercesi" title="Ariel Vercesi" style="width:70%">
+      </div>
+      <div class="w3-third">
+        <p>Eduardo Teisa</p>
+        <img src="images/eduardoteisaimage.jpg" class="w3-round w3-margin-bottom" alt="Eduardo Teisa" title="Eduardo Teisa" style="width:70%">
+      </div>
+            <div class="w3-third">
+        <p>David Verna</p>
+        <img src="images/davidvernaimage.jpg" class="w3-round w3-margin-bottom" alt="David Verna" title="David Verna" style="width:70%">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container w3-padding-15 w3-center w3-light-grey w3-xxlarge">
+    <h4>¡Seguinos en nuestras redes!</h4>
+    <a href="https://es-la.facebook.com/EntreSevillanas1/" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/entresevillanas/?hl=es" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://www.youtube.com/user/entresevillanas" target="_blank"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+  </div>
+
+  <h4 style="margin: 100px 0 20px; background-color:rgb(241, 241, 241)">CONOCENOS Y ESCUCHANOS</h4>
+
+  <!-- YouTube And Spotify Section -->
+  <div class="audioinfo">
+    <div class="youtubesection">
+  <iframe width="420" height="315"
+    src="https://www.youtube.com/embed/NG3O26wI_P4">
+  </iframe>
+  </div>
+
+  <iframe style="border-radius:12px"
+    src="https://open.spotify.com/embed/artist/3U06F4k9XWGu6Hw4fN3592?utm_source=generator"
+    width="70%"
+    height="300"
+    frameBorder="0"
+    allowfullscreen=""
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+  </iframe>
+  </div>
+
+  <!-- The Tour Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">SHOWS</h2>
+      <p class="w3-opacity w3-center"><i>¡Guardá tu entrada para el próximo!</i></p>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="images/es-ak_show.jpg" alt="Entre Sevillanas y Anam Keltoi" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Entre Sevillanas + Anam Keltoi</b></p>
+            <p class="w3-opacity">12 de marzo 2022 - Capitan Bar</p>
+            <p>El border swing y la música celta se unen para un show único.</p>
+            <button class="w3-button w3-black w3-margin-bottom"><a href="https://eyticket.com/detalle/ENTRE-SEVILLANAS---ANAM-KELTOI/" target="_blank">Comprar entrada</a></button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="images/es-ak_show.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Entre Sevillanas + Anam Keltoi</b></p>
+            <p class="w3-opacity">12 de marzo 2022 - Capitan Bar</p>
+            <p>El border swing y la música celta se unen para un show único.</p>
+            <button class="w3-button w3-black w3-margin-bottom"><a href="https://eyticket.com/detalle/ENTRE-SEVILLANAS---ANAM-KELTOI/" target="_blank">Comprar entrada</a></button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="images/es-ak_show.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Entre Sevillanas + Anam Keltoi</b></p>
+            <p class="w3-opacity">12 de marzo 2022 - Capitan Bar</p>
+            <p>El border swing y la música celta se unen para un show único.</p>
+            <button class="w3-button w3-black w3-margin-bottom"><a href="https://eyticket.com/detalle/ENTRE-SEVILLANAS---ANAM-KELTOI/" target="_blank">Comprar entrada</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACTO</h2>
+    <p class="w3-opacity w3-center"><i>¿Te gusta la banda? ¡Contactate!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i>Argentina<br>
+        <i class="fa fa-whatsapp" style="width:30px"></i>Contrataciones: <a href="https://wa.me/+5493416765069">+54 9 3416765069</a></a><br>
+        <i class="fa fa-envelope" style="width:30px"> </i>Email: <a href="mailto:entresevillanas@gmail.com">entresevillanas@gmail.com</a>
+      </div>
+    </div>
+      <h3>PRENSA</h3>
+      <div class="buhocaribu">
+        <img src="images/buhocaribulog.jpg" style="width:15%">
+        <p style="margin-top:10px"><a href="https://wa.me/+5493413024157">+54 9 3413024157</a></p>
+      </div>
+  </div>
+
+<!-- Footer -->
+<footer class=" w3-padding-10 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <p class="w3-medium">Made by David Verna. Web template powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>.</p>
+</footer>
+
+<script>
+// Automatic Slideshow
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("myslides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);
+}
+
+function toggleMenu() {
+  var x = document.getElementById("navMobile");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
